@@ -7,8 +7,12 @@ const sum = (a, b) => {
 			return reject("NaN");
 		}
 		const sumTotal = a + b;
-		await fs.appendFile("resultado.txt", `${a} + ${b} = ${sumTotal}\n`);
-		console.log("Arquivo gravado com sucesso");
+		try {
+			await fs.appendFile("resultado.txt", `${a} + ${b} = ${sumTotal}\n`);
+			console.log("Arquivo gravado com sucesso");
+		} catch {
+			console.log("problema na gravação do arquivo");
+		}
 	});
 };
 
