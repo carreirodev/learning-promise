@@ -1,9 +1,9 @@
 const fs = require("fs/promises");
 
 const sum = (a, b) => {
-	return new Promise(async (reject, resolve) => {
+	return new Promise(async (resolve, reject) => {
 		if (typeof (a + b) !== "number") {
-			return reject("NaN");
+			return resolve("NaN");
 		}
 		const sumTotal = a + b;
 		try {
