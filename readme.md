@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Gama Academy Exercise
-=======
-#Gama Academy Exercise#
->>>>>>> 2abfa003fd01b7ea79adc345c382b596be31f39d
 
 You have to create an add function that is a promise. It will receive 2 parameters that will be two numbers.
 
