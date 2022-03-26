@@ -11,6 +11,7 @@ const sum = (a, b) => {
 		try {
 			await fs.appendFile("resultado.txt", `${a} + ${b} = ${sumTotal}\n`);
 			console.log("Arquivo gravado com sucesso");
+			console.log(`Soma= ${sumTotal}`);
 		} catch {
 			console.log("problema na gravação do arquivo");
 		}
@@ -27,17 +28,18 @@ const sum1 = async (a, b) => {
 	try {
 		await fs.appendFile("resultado.txt", `${a} + ${b} = ${sumTotal}\n`);
 		console.log("Arquivo gravado com sucesso");
+		console.log(`Soma= ${sumTotal}`);
 	} catch {
 		console.log("problema na gravação do arquivo");
 	}
 };
 
-sum(10, 5);
-sum(8, 26);
-sum(4, "a");
-sum("3", 2);
+// sum(10, 5);
+// sum(8, 26);
+// sum(4, "a");
+// sum("3", 2);
 
-sum1(10, 5);
-sum1(8, 26);
-sum1(4, "a");
+// sum1(10, 5);
+// sum1(8, 26);
+// sum1(4, "a");
 sum1("3", 2);
